@@ -47,7 +47,7 @@ header {
     font-weight: 700;
     padding: 10px;
     margin-right: 5px;
-    
+
 
 }
 
@@ -201,26 +201,29 @@ nav .navlinks li a {
 }
 
 @media(max-width: 930px) {
-    .container .profile-pic{
+    .container .profile-pic {
         width: 140px;
         height: 140px;
     }
-    nav .navlinks li{
+
+    nav .navlinks li {
         display: flex;
         flex-wrap: wrap;
-        gap:20px;
+        gap: 20px;
     }
 
     @media(max-width:768px) {
-        .container .profile-pic{
+        .container .profile-pic {
             width: 100px;
             height: 100px;
         }
-        nav .navlinks li{
+
+        nav .navlinks li {
             display: flex;
             flex-wrap: wrap;
-            gap:20px;
+            gap: 20px;
         }
+
         .container {
             flex-direction: column;
             padding-top: 2rem;
@@ -230,17 +233,102 @@ nav .navlinks li a {
             padding: 40px 0px;
 
         }
-        .btn-group{
+
+        .btn-group {
             display: flex;
             flex-wrap: wrap;
         }
     }
 }
 
+/* --------------Projects ---------------- */
+
+
+
+
+.card-main {
+    font-family: 'Manrope', sans-serif;
+    margin-top: 32px;
+    display: flex;
+    gap: 48px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+.project h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 50px;
+    background: linear-gradient(to right, #f32170, #ff6b08,
+            #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.project span {
+    
+    background: linear-gradient(to right, #f32170, #ff6b08,
+            #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+.image-project {
+    width: 100%;
+    height: 300px;
+    border-radius: 16px 16px 8px 8px;
+}
+
+
+.card-project {
+    display: flex;
+    flex-direction: column;
+    width: 26%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #e5e5e5;
+    border: 2px solid #393e46;
+    border-radius: 20px;
+    min-height: 500px;
+    font-weight: 100;
+    text-align: center;
+    box-shadow: 2px 1000px 1px #333 inset;
+    
+}
+
+
+.card-project h4{
+    font-size: 20px;
+}
+.card-project h3{
+    font-size: 16px;
+    text-decoration: underline white;
+}
+
+.project-shared {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding:20px;
+    
+}
+
+.project-shared > div{
+    display: flex;
+    gap:8px;
+}
+
+
+
+
 /* --------------Tech Stack ---------------- */
 
 
-.titulo h1{
+.titulo h1 {
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -251,18 +339,17 @@ nav .navlinks li a {
     -webkit-background-clip: text;
 }
 
-.card{
-    gap:6px;
-    padding:10px;
-    
+.card {
+    gap: 6px;
+    padding: 10px;
+
 }
-.card p{
+
+.card p {
     display: flex;
     justify-content: center;
     margin-top: 10px;
-    color:#e5e5e5;
+    color: #e5e5e5;
     font-family: 'Manrope', sans-serif;
     font-weight: 600;
 }
-
-
