@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <img class="logo-img"src="coding-language.png" class="fa-solid fa-a"></i>
+                    <div class="logo-text">Jessica Yve</div>
+                    </div>
+                    <nav>
+                        <div class="togglebtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="techstack.html">TechStack</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+            </header>
+            <div class="container">
+                <div class="profile-pic">
+                    <img src=" https://picsum.photos/200" alt="profile pic">
+                </div>
+                <div class="about-text">
+                    <h3>Hi there &#128075; I'm, </h3><h1>Jessica Yve</h1>
+                    <h5>My Skills are <span class="input">Full-Stack Web Developer</span> </h5  >
+                    
+                    <p>Recent Full Stack web developer graduated by Labenu's bootcamp, where carried out projects similar to the day-to-day of a professional already active in the market. </p>
+                    <div class="btn-group">
+                        <a href="#" class="btn active">Download CV</a>
+                        <a href="#" class="btn">Linkedin</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-dribble"></i></a>
+                        <a href="#"><i class="fa-brands fa-pintrest"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+
+    <script>
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open")
+        })
+        var typed=new Typed(".input",{
+            strings:["Full-Stack Web Developer","Javascript","HTML","CSS","React","Node.js","TypeScript","MySQL","SQL"],
+            typedSpeed:90,
+            backSpeed:60,
+            loop:true
+        })
+
+
+        </script>
+</body>
+</html>
