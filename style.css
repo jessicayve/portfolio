@@ -47,7 +47,7 @@ header {
     font-weight: 700;
     padding: 10px;
     margin-right: 5px;
-    cursor: pointer;
+    
 
 }
 
@@ -57,29 +57,10 @@ header {
     color: #fff;
 }
 
-nav .togglebtn {
-    width: 35px;
-    height: 35px;
-    position: absolute;
-    top: 45px;
-    right: 3%;
-    z-index: 5;
-    cursor: pointer;
-    display: none;
-}
-
-nav .togglebtn span {
-    display: block;
-    background-color: #007ced;
-    margin: 5px 0px;
-    width: 100%;
-    height: 3px;
-    transition: 0.3s;
-    transition-property: transform, opacity;
-}
 
 nav .navlinks {
     list-style-type: none;
+    letter-spacing: 1px;
 }
 
 nav .navlinks li {
@@ -137,18 +118,18 @@ nav .navlinks li a {
 
 .about-text h5 span {
     background: linear-gradient(to right, #f32170, #ff6b08,
-    #cf23cf, #eedd44);
--webkit-text-fill-color: transparent;
--webkit-background-clip: text;
+            #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     font-size: 20px;
     font-family: 'Manrope', sans-serif;
 }
 
 .about-text h1 {
     background: linear-gradient(to left, #eedd44, #ff6b08,
-    #cf23cf, #f32170);
--webkit-text-fill-color: transparent;
--webkit-background-clip: text;
+            #cf23cf, #f32170);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     font-size: 2.5rem;
 }
 
@@ -161,9 +142,10 @@ nav .navlinks li a {
     color: #e5e5e5;
     font-size: 18px;
 }
+
 .about-text p {
     color: #e5e5e5;
-    font-size: 16px;  
+    font-size: 16px;
 }
 
 .btn-group {
@@ -197,7 +179,7 @@ nav .navlinks li a {
 }
 
 .about-text .social {
-   
+
     font-size: 18px;
     margin-right: 10px;
     transition: 0.5s;
@@ -212,69 +194,33 @@ nav .navlinks li a {
     font-size: 20px;
     margin-right: 8px;
     transition: 0.5s;
-    background: linear-gradient( #f32170, #cf23cf, #eedd44);
--webkit-text-fill-color: transparent;
--webkit-background-clip: text;
+    background: linear-gradient(#f32170, #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     transform: rotate(358deg);
 }
 
 @media(max-width: 930px) {
-    nav.togglebtn {
-        display: initial;
+    .container .profile-pic{
+        width: 140px;
+        height: 140px;
     }
-
-    .click {
-        top: 45px;
-    }
-
-    .click span {
-        position: absolute;
-        margin-top: 12px;
-    }
-
-    .click span:first-child {
-        transform: rotate(-40deg);
-    }
-
-    .click span:nth-child(2) {
-        opacity: 0;
-        margin: 0;
-    }
-
-    .click span:last-child {
-        transform: rotate(45deg);
-        top: 0;
-    }
-
-    nav .navlinks {
-        position: absolute;
-        top: 110px;
-        right: 0;
-        bottom: 0;
-        width: 60%;
-        height: 100vh;
-        background-color: #222;
-        z-index: 3;
-        box-shadow: 5px 13px 30px rgba(0, 0, 0, 0.1);
-        transition: 0.5;
-        padding: 25px 0px;
-    }
-
-    nav .navlinks li {
-        display: block;
-    }
-
-    nav .navlinks li a {
-        display: block;
-        margin-bottom: 15px;
-        text-align: center;
-    }
-
-    nav .navlinks.open {
-        right: 0;
+    nav .navlinks li{
+        display: flex;
+        flex-wrap: wrap;
+        gap:20px;
     }
 
     @media(max-width:768px) {
+        .container .profile-pic{
+            width: 100px;
+            height: 100px;
+        }
+        nav .navlinks li{
+            display: flex;
+            flex-wrap: wrap;
+            gap:20px;
+        }
         .container {
             flex-direction: column;
             padding-top: 2rem;
@@ -284,5 +230,39 @@ nav .navlinks li a {
             padding: 40px 0px;
 
         }
+        .btn-group{
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
 }
+
+/* --------------Tech Stack ---------------- */
+
+
+.titulo h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 54px;
+    background: linear-gradient(to right, #f32170, #ff6b08,
+            #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.card{
+    gap:6px;
+    padding:10px;
+    
+}
+.card p{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    color:#e5e5e5;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+}
+
+
