@@ -243,9 +243,6 @@ nav .navlinks li a {
 
 /* --------------Projects ---------------- */
 
-
-
-
 .card-main {
     font-family: 'Manrope', sans-serif;
     margin-top: 32px;
@@ -253,7 +250,7 @@ nav .navlinks li a {
     gap: 48px;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    
+
 }
 
 .project h2 {
@@ -268,7 +265,7 @@ nav .navlinks li a {
 }
 
 .project span {
-    
+
     background: linear-gradient(to right, #f32170, #ff6b08,
             #cf23cf, #eedd44);
     -webkit-text-fill-color: transparent;
@@ -291,38 +288,56 @@ nav .navlinks li a {
     justify-content: space-between;
     align-items: center;
     color: #e5e5e5;
-    border: 2px solid #393e46;
     border-radius: 20px;
     min-height: 500px;
     font-weight: 100;
     text-align: center;
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    border: solid 3px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #ff6b08, #ff48fa);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
     box-shadow: 2px 1000px 1px #333 inset;
-    
+
 }
 
 
-.card-project h4{
+.card-project h4 {
     font-size: 20px;
 }
-.card-project h3{
+
+.card-project h3 {
     font-size: 16px;
-    text-decoration: underline white;
+    text-decoration: underline #e5e5e5;
 }
 
 .project-shared {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    padding:20px;
-    
+    padding: 20px;
+
 }
 
-.project-shared > div{
+.project-shared>div {
     display: flex;
-    gap:8px;
+    gap: 8px;
 }
 
+@media(max-width: 930px) {
+    .project-shared>div {
+        display: flex;
+        flex-direction: column;
+        width: 30px;
+        gap: 1px;
+        justify-items: center;
+        align-items: center;
+    }
 
+    .card-project {
+        width: 80%;
+    }
+}
 
 
 /* --------------Tech Stack ---------------- */
@@ -352,4 +367,57 @@ nav .navlinks li a {
     color: #e5e5e5;
     font-family: 'Manrope', sans-serif;
     font-weight: 600;
+}
+
+/* --------------Contact ---------------- */
+
+.contact {
+    color: #cf23cf;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.contact span {
+    background: linear-gradient(to right, #f32170, #ff6b08,
+            #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.contact-info {
+    display: flex;
+    width: 100%;
+    color: #e5e5e5;
+
+    font-size: 20px;
+    justify-content: space-around;
+    align-items: center;
+    letter-spacing: 1px;
+
+}
+
+
+.line {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    height: 1px;
+    width: 90vw;
+    border: none;
+    margin-top: 20px;
+    background: linear-gradient(to right, #f32170, #ff6b08,
+    #cf23cf, #eedd44);
+}
+
+.footer {
+    color: #e5e5e5;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 60px;
+    font-size: 12px;
+    font-weight: 100;
 }
