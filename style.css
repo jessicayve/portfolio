@@ -352,6 +352,7 @@ letter-spacing: 0.5px;
     border-radius: 20px;
     min-height: 500px;
     font-weight: 100;
+    letter-spacing: 0.5px;
     text-align: center;
     box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
     border: solid 3px transparent;
