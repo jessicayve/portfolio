@@ -69,7 +69,7 @@ nav .navlinks li {
 }
 
 nav .navlinks li a {
-    color: #e5e5e5;
+    color:#d5d5d5;
     margin-right: 2.5rem;
 }
 
@@ -110,42 +110,29 @@ nav .navlinks li a {
     gap: 14px;
 }
 
-.about-text h5 {
-    color: #e5e5e5;
-    font-size: 14px;
+.about-text h1 {
+    color:#d5d5d5;
     font-family: 'Manrope', sans-serif;
 }
 
-.about-text h5 span {
+.about-text .name{
     background: linear-gradient(to right, #f32170, #ff6b08,
             #cf23cf, #eedd44);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    font-size: 20px;
     font-family: 'Manrope', sans-serif;
+    font-size: 2.4rem;
+    
+    
 }
 
-.about-text h1 {
-    background: linear-gradient(to left, #eedd44, #ff6b08,
-            #cf23cf, #f32170);
+.about-text .input{
+    background: linear-gradient(to right, #f32170, #ff6b08,
+            #cf23cf, #eedd44);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    font-size: 2.5rem;
-}
-
-.about-text h4 {
-    color: #e5e5e5;
-    font-size: 14px;
-}
-
-.about-text h3 {
-    color: #e5e5e5;
-    font-size: 18px;
-}
-
-.about-text p {
-    color: #e5e5e5;
-    font-size: 16px;
+    font-size: 1.6rem;
+   
 }
 
 .btn-group {
@@ -154,13 +141,13 @@ nav .navlinks li a {
 
 .btn-group .btn {
     border-color: #d5d5d5;
-    color: #fff;
+    color:#d5d5d5;
     background-color: #333;
     padding: 17px 25px;
     margin: 5px 0;
     margin-right: 7px;
     border-radius: 30px;
-    border: 2px solid #e5e5e5;
+    border: 2px solid #d5d5d5;
     box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
 
 }
@@ -169,7 +156,7 @@ nav .navlinks li a {
     border-radius: 100rem;
     padding: 1rem;
     padding: 17px 25px;
-    color: #fff;
+    color:#d5d5d5;
     box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
     border: solid 3px transparent;
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #ff6b08, #ff48fa);
@@ -240,6 +227,78 @@ nav .navlinks li a {
         }
     }
 }
+/* --------------About me ---------------- */
+
+
+.title{
+    background: linear-gradient(to right, #f32170, #ff6b08,
+    #cf23cf, #eedd44);
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+font-size: 2.5rem;
+letter-spacing: 0.5px;
+}
+
+.section-about{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    flex-direction: column;
+    color:#d5d5d5;
+    gap:20px;
+    
+    
+}
+.section-about-work-item{
+  height: 70px;
+}
+.section-about-work-item-header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4px;
+}
+.section-about h2{
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.section-about-me p{
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+.section-about h1{
+    
+    background: linear-gradient(to right, #f32170, #ff6b08,
+    #cf23cf, #eedd44);
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+font-size: 2.5rem;
+letter-spacing: 0.5px;
+    
+}
+.line-aboout {
+    height: 1px;
+    width: 50vw;
+    background: linear-gradient(to right, #f32170, #ff6b08,
+    #cf23cf, #eedd44);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* --------------Projects ---------------- */
 
@@ -253,11 +312,12 @@ nav .navlinks li a {
 
 }
 
-.project h2 {
+.project h1 {
     display: flex;
-    justify-content: center;
+    
     margin-top: 20px;
-    font-size: 50px;
+    font-size: 2.5rem;
+letter-spacing: 0.5px;
     background: linear-gradient(to right, #f32170, #ff6b08,
             #cf23cf, #eedd44);
     -webkit-text-fill-color: transparent;
@@ -287,7 +347,7 @@ nav .navlinks li a {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    color: #e5e5e5;
+    color:#d5d5d5;
     border-radius: 20px;
     min-height: 500px;
     font-weight: 100;
@@ -348,6 +408,7 @@ nav .navlinks li a {
     justify-content: center;
     margin-top: 20px;
     font-size: 54px;
+    letter-spacing: 0.5px;
     background: linear-gradient(to right, #f32170, #ff6b08,
             #cf23cf, #eedd44);
     -webkit-text-fill-color: transparent;
@@ -364,7 +425,7 @@ nav .navlinks li a {
     display: flex;
     justify-content: center;
     margin-top: 10px;
-    color: #e5e5e5;
+    color:#d5d5d5;
     font-family: 'Manrope', sans-serif;
     font-weight: 600;
 }
@@ -372,7 +433,10 @@ nav .navlinks li a {
 /* --------------Contact ---------------- */
 
 .contact {
-    color: #cf23cf;
+    background: linear-gradient(to right, #f32170,
+            #cf23cf);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -390,7 +454,7 @@ nav .navlinks li a {
 .contact-info {
     display: flex;
     width: 100%;
-    color: #e5e5e5;
+    color:#d5d5d5;
 
     font-size: 20px;
     justify-content: space-around;
@@ -401,20 +465,14 @@ nav .navlinks li a {
 
 
 .line {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
     height: 1px;
     width: 90vw;
-    border: none;
-    margin-top: 20px;
     background: linear-gradient(to right, #f32170, #ff6b08,
     #cf23cf, #eedd44);
 }
 
 .footer {
-    color: #e5e5e5;
+    color:#d5d5d5;
     display: flex;
     justify-content: flex-end;
     margin-top: 60px;
