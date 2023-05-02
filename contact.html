@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -30,7 +31,7 @@
                     </div>
                     <ul class="navlinks">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About me</a></li>
+                        <li><a href="about.html">About Me</a></li>
                         <li><a href="projects.html">Projects</a></li>
                         <li><a href="techstack.html">TechStack</a></li>
                         <li><a href="contact.html">Contact</a></li>
@@ -63,6 +64,16 @@
             </div>
         </div>
     </div>
+    <script>
+        var togglebtn = document.querySelector(".togglebtn")
+        var nav = document.querySelector(".navlinks")
+        var links = document.querySelector(".navlinks li")
+
+        togglebtn.addEventListener("click", function () {
+            this.classList.toggle("click")
+            nav.classList.toggle("open")
+        })
+    </script>
 </body>
 
 </html>
