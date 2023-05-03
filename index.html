@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="header">
@@ -20,7 +22,11 @@
                     <div class="logo-text">Jessica Yve</div>
                     </div>
                     <nav>
-                       
+                        <div class="togglebtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                         <ul class="navlinks">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Me</a></li>
@@ -29,25 +35,22 @@
                         <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
+                    
             </header>
             <div class="container">
                 <div class="profile-pic">
-                    <img src=" https://picsum.photos/200" alt="profile pic">
+                    <img src="./assets/profile-pic.jpg" alt="profile pic">
                 </div>
                 <div class="about-text">
-                    <h1>Hi &#128075; </br>  My name is, </br> <span class="name">Jessica Yve. </span> </br>I'm a Full-Stack Web Developer.</h1>
+                    <h1>Hi &#128075; </br>  My name is, </br> <span class="name">Jessica Yve. </span></h1>
+                    <p>As a full stack developer, I possess a wealth of knowledge and skills in both front-end and back-end development. I have spent countless hours mastering programming languages such as JavaScript, HTML, CSS, and SQL. I have an eye for detail and can quickly identify and troubleshoot any bugs or issues that may arise. My passion for technology and my commitment to staying up-to-date with the latest trends and innovations in the field makes me a valuable asset to any organization.</p>
                     <h5 class="typed"><span class="input">JavaScript</span> </h5 >
                     
                    
                     <div class="btn-group">
-                        <a href="#" class="btn active">Download CV</a>
-                        <a href="#" class="btn">Linkedin</a>
-                    </div>
-
-                    <div class="social">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="./assets/JessicaYve_cv.pdf" target="_blank" class="btn active">Download CV</a>
+                        <a href="https://www.linkedin.com/in/jessica-yve-31814125/" target="_blank" class="btn">Linkedin</a>
+                        <a href="https://github.com/jessicayve" target="_blank" class="btn">Github</a>
                     </div>
 
                 </div>
@@ -57,6 +60,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
 
     <script>
+        var togglebtn=document.querySelector(".togglebtn")
+        var nav=document.querySelector(".navlinks")
+        var links=document.querySelector(".navlinks li")
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click")
+            nav.classList.toggle("open")
+        })
       
         var typed=new Typed(".input",{
             strings:["Full-Stack Web Developer","Javascript","HTML","CSS","React","Node.js","TypeScript","MySQL","SQL"],

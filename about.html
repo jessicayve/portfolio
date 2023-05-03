@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -43,93 +44,29 @@
                     <h1 class="title">About Me</h1>
                     <div class="section-about-me">
 
-                        <p>The full passage of standard Lorem Ipsum copy is: Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat.</p>
+                        <p> After working as an administrative assistant for several years, I realized that my true passion lay in web development. I began teaching myself coding in my free time and eventually I enrolled in a coding bootcamp and quickly proved to be a skilled and dedicated learner. I became proficient in HTML, CSS, JavaScript, and several programming languages, and honed my skills in responsive web design, database management, and server-side programming. I credit my background in administration for giving me strong organizational skills and attention to detail, which I apply to my work as a developer.</p>
                     </div>
-                    <div class="section-about-work">
-
-                        <h1>Work Experience</h1>
-
-                        <div class="section-about-work-item">
-                            <div class="section-about-work-item-header">
-                                <h2>Junior Web Dev</h2>
-                                <span>Full time</span>
-                            </div>
-                            <div class="details">
-                                <span>
-                                    <img src="./assets/building.png" alt="icon" />
-                                    Rua 123 Lalala
-                                </span>
-                                <span>
-                                    <img src="./assets/local.png" alt="icon" />
-                                    Brazil
-                                </span>
-                                <span>
-                                    <img src="./assets/calendar.png" alt="icon" />
-                                    Sep 2021 - Dec 2021
-                                </span>
-                                
-                            </div>
-                           
-                        </div>
-                        <div class="line-about"></div>
-                        <div class="section-about-work-item">
-                            <div class="section-about-work-item-header">
-                                <h2>Junior Web Dev</h2>
-                                <span>Full time</span>
-                            </div>
-                            <div class="details">
-                                <span>
-                                    <img src="./assets/building.png" alt="icon" />
-                                    Rua 123 Lalala
-                                </span>
-                                <span>
-                                    <img src="./assets/local.png" alt="icon" />
-                                    Brazil
-                                </span>
-                                <span>
-                                    <img src="./assets/calendar.png" alt="icon" />
-                                    Sep 2021 - Dec 2021
-                                </span>
-                                
-                            </div>
-                           
-                        </div>
-                        <div class="line-about"></div>
-                        <div class="section-about-work-item">
-                            <div class="section-about-work-item-header">
-                                <h2>Junior Web Dev</h2>
-                                <span>Full time</span>
-                            </div>
-                            <div class="details">
-                                <span>
-                                    <img src="./assets/building.png" alt="icon" />
-                                    Rua 123 Lalala
-                                </span>
-                                <span>
-                                    <img src="./assets/local.png" alt="icon" />
-                                    Brazil
-                                </span>
-                                <span>
-                                    <img src="./assets/calendar.png" alt="icon" />
-                                    Sep 2021 - Dec 2021
-                                </span>
-                                
-                            </div>
-                           
-                        </div>
+                    
+                        
                         <div class="line-about"></div>
                     </div>
                 </div>
-                <!-- <div class="section-about-education">
-                        <h1>Education</h1>
-                    </div> -->
             </div>
         </div>
+        
     </div>
+   
     </div>
+    <script>
+        var togglebtn = document.querySelector(".togglebtn")
+        var nav = document.querySelector(".navlinks")
+        var links = document.querySelector(".navlinks li")
+
+        togglebtn.addEventListener("click", function () {
+            this.classList.toggle("click")
+            nav.classList.toggle("open")
+        })
+    </script>
 </body>
 
 </html>
