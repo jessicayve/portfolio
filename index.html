@@ -23,7 +23,11 @@
 
     <link rel="canonical" href="https://jessicayve.dev/" />
 
-    <link rel="icon" type="image/png" href="https://jessicayve.dev/preview.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://jessicayve.dev/preview.png"
+    />
     <link rel="apple-touch-icon" href="https://jessicayve.dev/preview.png" />
 
     <meta property="og:type" content="website" />
@@ -42,10 +46,7 @@
 
     <meta property="og:url" content="https://jessicayve.dev/" />
 
-    <meta
-      property="og:image"
-      content="https://jessicayve.dev/preview.png"
-    />
+    <meta property="og:image" content="https://jessicayve.dev/preview.png" />
 
     <meta
       property="og:image:secure_url"
@@ -72,10 +73,7 @@
       content="Software developer building modern web applications with React, TypeScript, Node.js, SQL and user-focused interfaces."
     />
 
-    <meta
-      name="twitter:image"
-      content="https://jessicayve.dev/preview.png"
-    />
+    <meta name="twitter:image" content="https://jessicayve.dev/preview.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -113,6 +111,23 @@
   </head>
 
   <body>
+    <div class="language-switcher" aria-label="Language switcher">
+      <button
+        class="lang-btn active"
+        data-lang-btn="en"
+        onclick="changeLanguage('en')"
+      >
+        EN
+      </button>
+      <button
+        class="lang-btn"
+        data-lang-btn="pt"
+        onclick="changeLanguage('pt')"
+      >
+        PT
+      </button>
+    </div>
+
     <main>
       <section class="about-section" id="about">
         <div id="particles-js"></div>
@@ -130,44 +145,57 @@
           </div>
 
           <div class="about-text-wrap">
-            <p class="section-tag">About Me</p>
+            <p class="section-tag" data-i18n="about_tag">About Me</p>
 
-            <h1>Hi, I'm Jessica Yve</h1>
+            <h1 data-i18n="hero_name">Hi, I'm Jessica Yve</h1>
 
             <h2 class="about-role">
-              I work with
+              <span data-i18n="hero_work_with">I work with</span>
               <span class="typed-wrapper">
                 <span class="input"></span>
               </span>
             </h2>
 
-            <p class="about-lead">
+            <p class="about-lead" data-i18n="hero_lead">
               I build modern software products and web applications with a focus
               on clean architecture, responsive interfaces and practical user
               experiences.
             </p>
 
-            <p class="about-description">
+            <p class="about-description" data-i18n="hero_description">
               I'm a software developer focused on turning ideas into functional
-              products through real projects. I enjoy building full applications,
-              improving code structure, working across frontend and backend, and
-              continuously learning through hands-on development.
+              products through real projects. I enjoy building full
+              applications, improving code structure, working across frontend
+              and backend, and continuously learning through hands-on
+              development.
             </p>
 
             <div class="about-highlights">
               <div class="about-highlight">
-                <span class="highlight-label">Focus</span>
-                <strong>Software Development &amp; Full Stack</strong>
+                <span class="highlight-label" data-i18n="highlight_focus_label"
+                  >Focus</span
+                >
+                <strong data-i18n="highlight_focus_value"
+                  >Software Development &amp; Full Stack</strong
+                >
               </div>
 
               <div class="about-highlight">
-                <span class="highlight-label">Approach</span>
-                <strong>Clean Code, Thoughtful UI &amp; Scalable Interfaces</strong>
+                <span
+                  class="highlight-label"
+                  data-i18n="highlight_approach_label"
+                  >Approach</span
+                >
+                <strong data-i18n="highlight_approach_value"
+                  >Clean Code, Thoughtful UI &amp; Scalable Interfaces</strong
+                >
               </div>
 
               <div class="about-highlight">
-                <span class="highlight-label">Based in</span>
-                <strong>Brazil</strong>
+                <span class="highlight-label" data-i18n="highlight_based_label"
+                  >Based in</span
+                >
+                <strong data-i18n="highlight_based_value">Brazil</strong>
               </div>
             </div>
           </div>
@@ -177,9 +205,9 @@
       <section class="projects-section" id="projects">
         <div class="container">
           <div class="section-heading">
-            <p class="section-tag">Projects</p>
-            <h2>Software Projects I've Built</h2>
-            <p class="section-description">
+            <p class="section-tag" data-i18n="projects_tag">Projects</p>
+            <h2 data-i18n="projects_title">Software Projects I've Built</h2>
+            <p class="section-description" data-i18n="projects_description">
               A selection of projects that reflect my experience building
               interfaces, application flows, full stack features and modern web
               software.
@@ -197,29 +225,31 @@
               <div class="project-body">
                 <div class="project-top">
                   <h3>LabLink</h3>
-                  <span class="project-type">Full Stack Application</span>
+                  <span class="project-type" data-i18n="lablink_type">
+                    Full Stack Application
+                  </span>
                 </div>
 
-                <p>
+                <p data-i18n="lablink_description">
                   A full stack social-style platform with authentication,
                   account creation and backend-driven user data. Built with a
                   focus on application structure, user flows and responsive
                   interaction.
                 </p>
 
+                <div class="project-techs">
+                  <span class="tech-badge">React</span>
+                  <span class="tech-badge">TypeScript</span>
+                </div>
+
                 <div class="project-links">
-                  <a
-                    href="https://lab-link-nine.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href="https://lab-link-nine.vercel.app/" target="_blank">
                     <i class="fa-solid fa-globe"></i>
-                    Deploy
+                    <span data-i18n="deploy">Deploy</span>
                   </a>
                   <a
                     href="https://github.com/jessicayve/labLink"
                     target="_blank"
-                    rel="noopener noreferrer"
                   >
                     <i class="fa-brands fa-github"></i>
                     GitHub
@@ -238,29 +268,27 @@
               <div class="project-body">
                 <div class="project-top">
                   <h3>T4LK</h3>
-                  <span class="project-type">Frontend Application</span>
+                  <span class="project-type" data-i18n="t4lk_type">
+                    Frontend Application
+                  </span>
                 </div>
 
-                <p>
+                <p data-i18n="t4lk_description">
                   A developer collaboration platform designed as a modern
                   workspace interface, featuring chat, sprint boards, dashboards
                   and planning views for team productivity.
                 </p>
 
+                <div class="project-techs">
+                  <span class="tech-badge">React</span>
+                </div>
+
                 <div class="project-links">
-                  <a
-                    href="https://t4lk.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href="https://t4lk.vercel.app/" target="_blank">
                     <i class="fa-solid fa-globe"></i>
-                    Deploy
+                    <span data-i18n="deploy">Deploy</span>
                   </a>
-                  <a
-                    href="https://github.com/jessicayve/t4lk"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href="https://github.com/jessicayve/t4lk" target="_blank">
                     <i class="fa-brands fa-github"></i>
                     GitHub
                   </a>
@@ -278,28 +306,32 @@
               <div class="project-body">
                 <div class="project-top">
                   <h3>Flower-e-Shop</h3>
-                  <span class="project-type">E-commerce Application</span>
+                  <span class="project-type" data-i18n="flower_type">
+                    E-commerce Application
+                  </span>
                 </div>
 
-                <p>
+                <p data-i18n="flower_description">
                   An e-commerce project featuring product browsing, filtering,
                   cart functionality, sign in, register flow and a structured
                   shopping experience across responsive layouts.
                 </p>
 
+                <div class="project-techs">
+                  <span class="tech-badge">React</span>
+                </div>
+
                 <div class="project-links">
                   <a
                     href="https://flower-e-shop-79k5.vercel.app/"
                     target="_blank"
-                    rel="noopener noreferrer"
                   >
                     <i class="fa-solid fa-globe"></i>
-                    Deploy
+                    <span data-i18n="deploy">Deploy</span>
                   </a>
                   <a
                     href="https://github.com/jessicayve/flower-e-Shop"
                     target="_blank"
-                    rel="noopener noreferrer"
                   >
                     <i class="fa-brands fa-github"></i>
                     GitHub
@@ -311,36 +343,35 @@
             <article class="project-card">
               <div class="project-image">
                 <video autoplay muted loop playsinline preload="metadata">
-                  <source src="./assets/foodie.mp4" type="video/mp4" />
+                  <source src="./assets/reuse.mp4" type="video/mp4" />
                 </video>
               </div>
 
               <div class="project-body">
                 <div class="project-top">
-                  <h3>Restaurant Delivery Landing Page</h3>
-                  <span class="project-type">Frontend Project</span>
+                  <h3>ReUse</h3>
+                  <span class="project-type" data-i18n="reuse_type">
+                    Mobile + AI Application
+                  </span>
                 </div>
 
-                <p>
-                  A responsive landing page built to showcase conversion-focused
-                  layout, structured content sections and polished visual design
-                  for a digital food delivery brand.
+                <p data-i18n="reuse_description">
+                  An eco-friendly mobile application that analyzes used objects
+                  through image input and suggests sustainable actions such as
+                  reuse, repair or recycling.
                 </p>
 
+                <div class="project-techs">
+                  <span class="tech-badge">Flutter</span>
+                  <span class="tech-badge">Python</span>
+                </div>
+
                 <div class="project-links">
-                  <a
-                    href="https://restaurant-landing-page-ten.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href="#" target="_blank">
                     <i class="fa-solid fa-globe"></i>
-                    Deploy
+                    <span>Deploy</span>
                   </a>
-                  <a
-                    href="https://github.com/jessicayve/restaurant-landing-page"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href="#" target="_blank">
                     <i class="fa-brands fa-github"></i>
                     GitHub
                   </a>
@@ -354,9 +385,11 @@
       <section class="stack-section" id="stack">
         <div class="container">
           <div class="section-heading stack-heading">
-            <p class="section-tag stack-tag">Tech Stack</p>
-            <h2>Technologies I work with</h2>
-            <p class="section-description">
+            <p class="section-tag stack-tag" data-i18n="stack_tag">
+              Tech Stack
+            </p>
+            <h2 data-i18n="stack_title">Technologies I work with</h2>
+            <p class="section-description" data-i18n="stack_description">
               Tools and technologies I use to build modern applications,
               software interfaces and full stack solutions.
             </p>
@@ -423,16 +456,18 @@
 
         <div class="container">
           <div class="section-heading contact-heading">
-            <p class="section-tag">Contact</p>
-            <h2>Open to software development opportunities</h2>
+            <p class="section-tag" data-i18n="contact_tag">Contact</p>
+            <h2 data-i18n="contact_title">
+              Open to software development opportunities
+            </h2>
           </div>
 
           <div class="contact-panel">
             <div class="contact-panel-content">
               <div class="contact-copy">
-                <h3>Let's connect</h3>
+                <h3 data-i18n="contact_subtitle">Let's connect</h3>
 
-                <p>
+                <p data-i18n="contact_description">
                   I’m open to software development opportunities, freelance
                   projects and remote roles where I can contribute, keep
                   learning and build useful digital products with real impact.
@@ -440,17 +475,27 @@
 
                 <div class="contact-meta">
                   <div class="meta-item">
-                    <span class="meta-title">Based in</span>
-                    <span class="meta-text">Brazil</span>
+                    <span class="meta-title" data-i18n="contact_based_label"
+                      >Based in</span
+                    >
+                    <span class="meta-text" data-i18n="contact_based_value"
+                      >Brazil</span
+                    >
                   </div>
 
                   <div class="meta-item">
-                    <span class="meta-title">Focus</span>
-                    <span class="meta-text">Software Development &amp; Full Stack</span>
+                    <span class="meta-title" data-i18n="contact_focus_label"
+                      >Focus</span
+                    >
+                    <span class="meta-text" data-i18n="contact_focus_value"
+                      >Software Development &amp; Full Stack</span
+                    >
                   </div>
 
                   <div class="meta-item">
-                    <span class="meta-title">Email</span>
+                    <span class="meta-title" data-i18n="contact_email_label"
+                      >Email</span
+                    >
                     <span class="meta-text">yve.jessica@gmail.com</span>
                   </div>
                 </div>
@@ -463,12 +508,11 @@
                   class="contact-btn primary-btn"
                 >
                   <i class="fa-solid fa-file-arrow-down icon-white"></i>
-                  <span>Download CV</span>
+                  <span data-i18n="download_cv">Download CV</span>
                 </a>
 
                 <a
-                  href="href=https://www.linkedin.com/in/jessica-y-31814125"
-                  target="_blank"
+                  href="https://www.linkedin.com/in/jessica-yve-31814125/"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="contact-btn"
@@ -492,13 +536,15 @@
                   class="contact-btn"
                 >
                   <i class="fa-solid fa-envelope"></i>
-                  <span>Email</span>
+                  <span data-i18n="email_button">Email</span>
                 </a>
               </div>
             </div>
           </div>
 
-          <p class="contact-footer-note">Designed and built with care.</p>
+          <p class="contact-footer-note" data-i18n="footer_note">
+            Designed and built by Jessica Yve.
+          </p>
         </div>
       </section>
     </main>
@@ -509,10 +555,10 @@
     <script>
       tsParticles.load("particles-js", {
         fullScreen: {
-          enable: false
+          enable: false,
         },
         background: {
-          color: "transparent"
+          color: "transparent",
         },
         fpsLimit: 60,
         particles: {
@@ -520,20 +566,20 @@
             value: 58,
             density: {
               enable: true,
-              area: 900
-            }
+              area: 900,
+            },
           },
           color: {
-            value: ["#f32170", "#ff6b08", "#cf23cf", "#eedd44", "#ffffff"]
+            value: ["#f32170", "#ff6b08", "#cf23cf", "#eedd44", "#ffffff"],
           },
           shape: {
-            type: "circle"
+            type: "circle",
           },
           opacity: {
-            value: { min: 0.22, max: 0.50 }
+            value: { min: 0.22, max: 0.5 },
           },
           size: {
-            value: { min: 1.2, max: 4.2 }
+            value: { min: 1.2, max: 4.2 },
           },
           move: {
             enable: true,
@@ -542,58 +588,298 @@
             random: true,
             straight: false,
             outModes: {
-              default: "out"
-            }
+              default: "out",
+            },
           },
           links: {
             enable: true,
             distance: 145,
             color: "#ffffff",
-            opacity: 0.20,
-            width: 1
-          }
+            opacity: 0.2,
+            width: 1,
+          },
         },
         interactivity: {
           events: {
             onHover: {
               enable: true,
-              mode: "grab"
+              mode: "grab",
             },
-            resize: true
+            resize: true,
           },
           modes: {
             grab: {
               distance: 170,
               links: {
-                opacity: 0.50
-              }
-            }
-          }
+                opacity: 0.5,
+              },
+            },
+          },
         },
-        detectRetina: true
+        detectRetina: true,
       });
 
-      var typed = new Typed(".input", {
-        strings: [
-          "Software Development",
-          "Full Stack Projects",
-          "TypeScript",
-          "JavaScript",
-          "React",
-          "Node.js",
-          "Python",
-          "SQL",
-          "Oracle",
-          "AWS",
-          "Web Applications"
-        ],
-        typeSpeed: 100,
-        backSpeed: 85,
-        backDelay: 1400,
-        startDelay: 300,
-        loop: true,
-        showCursor: true,
-        cursorChar: "|"
+      const translations = {
+        en: {
+          pageTitle: "Jessica Yve | Software Developer Portfolio & Projects",
+          metaDescription:
+            "Software developer building modern web applications with React, TypeScript, Node.js, SQL and user-focused interfaces. Explore projects, full stack work and software development experience.",
+          ogTitle: "Jessica Yve | Software Developer Portfolio & Projects",
+          ogDescription:
+            "Software developer building modern web applications with React, TypeScript, Node.js, SQL and user-focused interfaces.",
+          twitterTitle: "Jessica Yve | Software Developer Portfolio & Projects",
+          twitterDescription:
+            "Software developer building modern web applications with React, TypeScript, Node.js, SQL and user-focused interfaces.",
+          about_tag: "About Me",
+          hero_name: "Hi, I'm Jessica Yve",
+          hero_work_with: "I work with",
+          hero_lead:
+            "I build modern software products and web applications with a focus on clean architecture, responsive interfaces and practical user experiences.",
+          hero_description:
+            "I'm a software developer focused on turning ideas into functional products through real projects. I enjoy building full applications, improving code structure, working across frontend and backend, and continuously learning through hands-on development.",
+          highlight_focus_label: "Focus",
+          highlight_focus_value: "Software Development & Full Stack",
+          highlight_approach_label: "Approach",
+          highlight_approach_value:
+            "Clean Code, Thoughtful UI & Scalable Interfaces",
+          highlight_based_label: "Based in",
+          highlight_based_value: "Brazil",
+          projects_tag: "Projects",
+          projects_title: "Software Projects I've Built",
+          projects_description:
+            "A selection of projects that reflect my experience building interfaces, application flows, full stack features and modern web software.",
+          lablink_type: "Full Stack Application",
+          lablink_description:
+            "A full stack social-style platform with authentication, account creation and backend-driven user data. Built with a focus on application structure, user flows and responsive interaction.",
+          t4lk_type: "Frontend Application",
+          t4lk_description:
+            "A developer collaboration platform designed as a modern workspace interface, featuring chat, sprint boards, dashboards and planning views for team productivity.",
+          flower_type: "E-commerce Application",
+          flower_description:
+            "An e-commerce project featuring product browsing, filtering, cart functionality, sign in, register flow and a structured shopping experience across responsive layouts.",
+          reuse_type: "Mobile + AI Application",
+
+          reuse_description:
+            "An eco-friendly mobile application that analyzes used objects through image input and suggests sustainable actions such as reuse, repair or recycling.",
+          restaurant_title: "Restaurant Delivery Landing Page",
+          restaurant_type: "Frontend Project",
+          restaurant_description:
+            "A responsive landing page built to showcase conversion-focused layout, structured content sections and polished visual design for a digital food delivery brand.",
+          deploy: "Deploy",
+          stack_tag: "Tech Stack",
+          stack_title: "Technologies I work with",
+          stack_description:
+            "Tools and technologies I use to build modern applications, software interfaces and full stack solutions.",
+          contact_tag: "Contact",
+          contact_title: "Open to software development opportunities",
+          contact_subtitle: "Let's connect",
+          contact_description:
+            "I’m open to software development opportunities, freelance projects and remote roles where I can contribute, keep learning and build useful digital products with real impact.",
+          contact_based_label: "Based in",
+          contact_based_value: "Brazil",
+          contact_focus_label: "Focus",
+          contact_focus_value: "Software Development & Full Stack",
+          contact_email_label: "Email",
+          download_cv: "Download CV",
+          email_button: "Email",
+          footer_note: "Designed and built with care.",
+          typedStrings: [
+            "Software Development",
+            "Full Stack Projects",
+            "TypeScript",
+            "JavaScript",
+            "React",
+            "Node.js",
+            "Python",
+            "SQL",
+            "Oracle",
+            "AWS",
+            "Web Applications",
+          ],
+        },
+        pt: {
+          pageTitle:
+            "Jessica Yve | Portfólio e Projetos de Desenvolvimento de Software",
+          metaDescription:
+            "Desenvolvedora de software criando aplicações web modernas com React, TypeScript, Node.js, SQL e interfaces focadas no usuário. Veja projetos, experiência full stack e desenvolvimento de software.",
+          ogTitle:
+            "Jessica Yve | Portfólio e Projetos de Desenvolvimento de Software",
+          ogDescription:
+            "Desenvolvedora de software criando aplicações web modernas com React, TypeScript, Node.js, SQL e interfaces focadas no usuário.",
+          twitterTitle:
+            "Jessica Yve | Portfólio e Projetos de Desenvolvimento de Software",
+          twitterDescription:
+            "Desenvolvedora de software criando aplicações web modernas com React, TypeScript, Node.js, SQL e interfaces focadas no usuário.",
+          about_tag: "Sobre mim",
+          hero_name: "Jessica Yve",
+          hero_work_with: "Trabalho com",
+          hero_lead:
+            "Desenvolvo produtos de software e aplicações web modernas com foco em arquitetura limpa, interfaces responsivas e experiências práticas para o usuário.",
+          hero_description:
+            "Sou uma desenvolvedora de software focada em transformar ideias em produtos funcionais por meio de projetos reais. Gosto de construir aplicações completas, melhorar a estrutura do código, atuar no frontend e backend e continuar aprendendo com desenvolvimento prático.",
+          highlight_focus_label: "Foco",
+          highlight_focus_value: "Desenvolvimento de Software e Full Stack",
+          highlight_approach_label: "Abordagem",
+          highlight_approach_value:
+            "Código Limpo, UI Bem Pensada e Interfaces Escaláveis",
+          highlight_based_label: "Localização",
+          highlight_based_value: "Brasil",
+          projects_tag: "Projetos",
+          projects_title: "Projetos de software que desenvolvi",
+          projects_description:
+            "Uma seleção de projetos que refletem minha experiência criando interfaces, fluxos de aplicação, funcionalidades full stack e software web moderno.",
+          lablink_type: "Aplicação Full Stack",
+          lablink_description:
+            "Uma plataforma em estilo rede social full stack com autenticação, criação de conta e dados de usuário vindos do backend. Desenvolvida com foco em estrutura da aplicação, fluxo do usuário e interação responsiva.",
+          t4lk_type: "Aplicação Frontend",
+          t4lk_description:
+            "Uma plataforma de colaboração para desenvolvedores, desenhada como uma interface moderna de workspace, com chat, quadros de sprint, dashboards e visualizações de planejamento para produtividade em equipe.",
+          flower_type: "Aplicação E-commerce",
+          flower_description:
+            "Um projeto de e-commerce com navegação de produtos, filtros, funcionalidade de carrinho, login, cadastro e uma experiência de compra estruturada em layouts responsivos.",
+          reuse_type: "Aplicação mobile com IA",
+
+          reuse_description:
+            "Um aplicativo sustentável que analisa objetos usados por imagem e sugere ações inteligentes como reutilização, reparo ou reciclagem.",
+          restaurant_title: "Landing Page de Delivery para Restaurante",
+          restaurant_type: "Projeto Frontend",
+          restaurant_description:
+            "Uma landing page responsiva criada para destacar layout orientado à conversão, seções de conteúdo bem estruturadas e design visual refinado para uma marca digital de delivery.",
+          deploy: "Deploy",
+          stack_tag: "Tecnologias",
+          stack_title: "Tecnologias com as quais trabalho",
+          stack_description:
+            "Ferramentas e tecnologias que uso para criar aplicações modernas, interfaces de software e soluções full stack.",
+          contact_tag: "Contato",
+          contact_title:
+            "Aberta a oportunidades em desenvolvimento de software",
+          contact_subtitle: "Vamos nos conectar",
+          contact_description:
+            "Estou aberta a oportunidades em desenvolvimento de software, projetos freelance e vagas remotas nas quais eu possa contribuir, continuar aprendendo e construir produtos digitais úteis com impacto real.",
+          contact_based_label: "Localização",
+          contact_based_value: "Brasil",
+          contact_focus_label: "Foco",
+          contact_focus_value: "Desenvolvimento de Software e Full Stack",
+          contact_email_label: "Email",
+          download_cv: "Baixar CV",
+          email_button: "Email",
+          footer_note: "Design e desenvolvimento feitos com cuidado.",
+          typedStrings: [
+            "Desenvolvimento de Software",
+            "Projetos Full Stack",
+            "TypeScript",
+            "JavaScript",
+            "React",
+            "Node.js",
+            "Python",
+            "SQL",
+            "Oracle",
+            "AWS",
+            "Aplicações Web",
+          ],
+        },
+      };
+
+      let typedInstance;
+
+      function initTyped(strings) {
+        const typedTarget = document.querySelector(".input");
+
+        if (!typedTarget) return;
+
+        typedTarget.textContent = "";
+
+        if (typedInstance) {
+          typedInstance.destroy();
+        }
+
+        typedInstance = new Typed(".input", {
+          strings,
+          typeSpeed: 100,
+          backSpeed: 85,
+          backDelay: 1400,
+          startDelay: 300,
+          loop: true,
+          showCursor: true,
+          cursorChar: "|",
+        });
+      }
+
+      function updateMeta(lang) {
+        const t = translations[lang];
+
+        document.title = t.pageTitle;
+        document.documentElement.lang = lang;
+
+        const metaDescription = document.querySelector(
+          'meta[name="description"]',
+        );
+        const ogTitle = document.querySelector('meta[property="og:title"]');
+        const ogDescription = document.querySelector(
+          'meta[property="og:description"]',
+        );
+        const twitterTitle = document.querySelector(
+          'meta[name="twitter:title"]',
+        );
+        const twitterDescription = document.querySelector(
+          'meta[name="twitter:description"]',
+        );
+        const ogLocale = document.querySelector('meta[property="og:locale"]');
+
+        if (metaDescription)
+          metaDescription.setAttribute("content", t.metaDescription);
+        if (ogTitle) ogTitle.setAttribute("content", t.ogTitle);
+        if (ogDescription)
+          ogDescription.setAttribute("content", t.ogDescription);
+        if (twitterTitle) twitterTitle.setAttribute("content", t.twitterTitle);
+        if (twitterDescription)
+          twitterDescription.setAttribute("content", t.twitterDescription);
+        if (ogLocale)
+          ogLocale.setAttribute("content", lang === "pt" ? "pt_BR" : "en_US");
+      }
+
+      function updateLanguageButtons(lang) {
+        document.querySelectorAll("[data-lang-btn]").forEach((button) => {
+          button.classList.toggle(
+            "active",
+            button.getAttribute("data-lang-btn") === lang,
+          );
+        });
+      }
+
+      function changeLanguage(lang) {
+        const selectedLanguage = translations[lang] ? lang : "en";
+        const content = translations[selectedLanguage];
+
+        document.querySelectorAll("[data-i18n]").forEach((element) => {
+          const key = element.getAttribute("data-i18n");
+          if (content[key]) {
+            element.innerHTML = content[key];
+          }
+        });
+
+        updateMeta(selectedLanguage);
+        updateLanguageButtons(selectedLanguage);
+        initTyped(content.typedStrings);
+        localStorage.setItem("portfolio-language", selectedLanguage);
+      }
+
+      const savedLanguage =
+        localStorage.getItem("portfolio-language") ||
+        (navigator.language && navigator.language.toLowerCase().startsWith("pt")
+          ? "pt"
+          : "en");
+
+      changeLanguage(savedLanguage);
+
+      const languageSwitcher = document.querySelector(".language-switcher");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 120) {
+          languageSwitcher.classList.add("compact");
+        } else {
+          languageSwitcher.classList.remove("compact");
+        }
       });
     </script>
   </body>
